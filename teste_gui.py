@@ -4,7 +4,7 @@ from tkinter import messagebox
 # Configurações iniciais do customtkinter
 ctk.set_appearance_mode("System")  # Alternativa: "Dark" ou "Light"
 ctk.set_default_color_theme("blue")  # Alternativa: "dark-blue" ou "green"
-
+#nigga
 # Função para exibir a janela de login
 def abrir_login():
     limpar_janela()
