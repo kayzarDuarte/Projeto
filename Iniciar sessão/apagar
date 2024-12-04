@@ -1,0 +1,17 @@
+import sqlite3
+conexao = sqlite3.connect("utilizadores.db")
+cursor = conexao.cursor()
+def tabela ():
+    cursor.execute("DROP TABLE IF EXISTS usuarios")
+    conexao.commit()
+
+apagar = input("Deseja apagar os dados da tabela? (s/n)")
+
+if apagar == "s" or apagar == "S":
+    print(str("OS SEUS DADOS FORAM APAGADOS COM SUCESSO!!"))
+    tabela()
+else: 
+    print(str("OS SEUS DADOS CONTINUAM PRESENTES NA TABELA!!"))
+
+
+conexao.close()
